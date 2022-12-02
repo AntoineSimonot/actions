@@ -33,5 +33,5 @@ jobs:
                   path: app/
                   remote_path: /var/www/html/
                   remote_host: 46.101.188.223
-                  remote_user: github
+                  remote_user: root
                   remote_key: ${{ secrets.DEPLOY_KEY }}
