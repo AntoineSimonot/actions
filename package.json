@@ -2,7 +2,6 @@
     "name": "actions",
     "version": "0.1.0",
     "private": true,
-    "homepage": "/actions",
     "repository": "git@github.com:AntoineSimonot/actions.git",
     "dependencies": {
         "@testing-library/jest-dom": "^5.16.5",
