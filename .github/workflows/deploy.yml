@@ -32,6 +32,6 @@ jobs:
                   switches: -vzr --delete
                   path: src/
                   remote_path: /var/www/html/
-                  remote_host: http://46.101.188.223/
+                  remote_host: 46.101.188.223
                   remote_user: github
                   remote_key: ${{ secrets.DEPLOY_KEY }}
