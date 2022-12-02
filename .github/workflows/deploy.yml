@@ -19,7 +19,10 @@ jobs:
         runs-on: ubuntu-latest
         # Steps represent a sequence of tasks that will be executed as part of the job
         steps:
-            - yarn: build
+            - name: Install dependencies 📦
+                run: yarn install --frozen-lockfile
+            - name: Build
+                run: yarn build
             # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
             - uses: actions/checkout@v2
             # Deploy using rsync to server
@@ -31,7 +34,7 @@ jobs:
                   # -r: copy files recursively
                   # --delete: delete extraneous files from dest dirs
                   switches: -vzr --delete
-                  path: app/
+                  path: build/
                   remote_path: /var/www/html/
                   remote_host: 46.101.188.223
                   remote_user: github
