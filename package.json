@@ -14,7 +14,7 @@
         "web-vitals": "^2.1.4"
     },
     "devDependencies": {
-        "@types/react": "^18.2.0",
+        "@types/react": "^18.0.24",
         "@types/react-dom": "^18.2.0",
         "esbuild": "^0.15.16"
     },
