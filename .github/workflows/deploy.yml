@@ -19,9 +19,8 @@ jobs:
         runs-on: ubuntu-latest
         # Steps represent a sequence of tasks that will be executed as part of the job
         steps:
-            - name: install
-              run: yarn install
             - name: build
+              run: yarn install
               run: yarn build
             # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
             - uses: actions/checkout@v2
